@@ -1,0 +1,12 @@
+.homepage {
+  background-color: #c3d8e9;
+  min-height: 100vh;
+
+}
+
+.position-class {
+   
+  background-color: red;
+  position: relative;
+  top: 170px;
+}
