@@ -1,12 +1,16 @@
 .homepage {
   background-color: #c3d8e9;
   min-height: 100vh;
-
 }
 
-.position-class {
-   
-  background-color: red;
+.position-parent{
+    position:relative;
+}
+.position-child {
+  /* background-color: red; */
   position: relative;
-  top: 170px;
+  top: 27%;
+}
+.inline-class{
+    display: inline;
 }
