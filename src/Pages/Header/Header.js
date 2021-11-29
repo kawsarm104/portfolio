@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AboutMe = () => {
+const Header = () => {
     return (
         <div>
-            About Me
+            navlink .... 
         </div>
     );
 };
 
-export default AboutMe;
+export default Header;
