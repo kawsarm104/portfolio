@@ -36,38 +36,49 @@ const Portfolio = () => {
         </Col>
         <Col border="dark" sm={12}>
           <Card>
-            <Card.Img
-              variant="top"
-              style={{ width: "100%", height: "300px" }}
-              src={medicenter}
-            />
+            <a
+              href="https://medicenter-dentist.firebaseapp.com/"
+              target="blank"
+            >
+              <Card.Img
+                variant="top"
+                style={{ width: "100%", height: "300px" }}
+                src={medicenter}
+              />
+            </a>
           </Card>
         </Col>
         <Col border="dark" sm={12}>
           <Card>
-            <Card.Img
-              variant="top"
-              style={{ width: "100%", height: "300px" }}
-              src={a7}
-            />
+            <a href="https://serene-raman-b80cc4.netlify.app/" target="blank">
+              <Card.Img
+                variant="top"
+                style={{ width: "100%", height: "300px" }}
+                src={a7}
+              />
+            </a>
           </Card>
         </Col>
         <Col border="dark" sm={12}>
           <Card>
-            <Card.Img
-              variant="top"
-              style={{ width: "100%", height: "300px" }}
-              src={a8}
-            />
+            <a href="https://learn-with-kawsar.web.app/" target="blank">
+              <Card.Img
+                variant="top"
+                style={{ width: "100%", height: "300px" }}
+                src={a8}
+              />
+            </a>
           </Card>
         </Col>
         <Col border="dark" sm={12}>
           <Card>
-            <Card.Img
-              variant="top"
-              style={{ width: "100%", height: "300px" }}
-              src={a9}
-            />
+            <a href="https://brave-mcnulty-9635a1.netlify.app/" target="blank">
+              <Card.Img
+                variant="top"
+                style={{ width: "100%", height: "300px" }}
+                src={a9}
+              />
+            </a>
           </Card>
         </Col>
       </Row>
