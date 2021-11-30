@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Typical from "react-typical";
-import image from "../../image/personal/personalimage.jpg";
+import image from "../../image/personal/personalimageforhome.png";
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -28,7 +28,7 @@ const HomePage = () => {
               </h1>
             </div>
           </Col>
-          <Col sm={12} md={5} className="p-3 mt-4">
+          <Col sm={12} md={5} className="">
             <img src={image} className="img-fluid" alt="" />
           </Col>
         </Row>

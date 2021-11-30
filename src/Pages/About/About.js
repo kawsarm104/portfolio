@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import image from "../../image/personal/personalimage.jpg";
+import image from "../../image/personal/personalimageforhomewhite.png";
+import Skill from "../Skill/Skill";
+
 
 const About = () => {
   return (
@@ -30,6 +32,7 @@ const About = () => {
                 <h6>Mobile Apps</h6>
                 <h6>Mobile Apps</h6>
               </Col>
+              <Skill></Skill>
             </Row>
           </Col>
         </Row>
