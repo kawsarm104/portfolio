@@ -9,7 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 const Education = () => {
   return (
     <div style={{ backgroundColor: "#e3e3e3" }}>
-      <h2 className="text-center mt-3 py-4 fw-bolder">
+      <h2 className="text-center py-4 fw-bolder">
         Education & Experience
       </h2>
       <div>

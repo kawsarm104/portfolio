@@ -23,21 +23,16 @@ const About = () => {
               alt=""
             />
           </Col>
-          <Col
-            sm={12}
-            md={6}
-            className=""
-            style={{ marginTop: "30px" }}
-          >
+          <Col sm={12} md={6} className="" style={{ marginTop: "30px" }}>
             <h5 className="fw-bolder mt-5">ABOUT ME</h5>
             <h2 className="fw-bolder my-4">Hello, I am Md. Kawsar Hossain.</h2>
             <p className="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim enim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              Well I am Md. Kawsar Hossain.Completed my BSc in Computer Science
+              & Engineering. I love to learn new things and always excited about
+              it.
             </p>
-            <div className="my-4">
+            <h4>My Skills </h4>
+            <div className="mt-4">
               HTML
               <ProgressBar now={html} label={`${html}%`} />
               CSS
