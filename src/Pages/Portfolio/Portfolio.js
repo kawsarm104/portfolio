@@ -14,20 +14,24 @@ const Portfolio = () => {
       <Row sm={12} md={3} className="g-4">
         <Col border="dark" sm={12}>
           <Card>
-            <Card.Img
-              variant="top"
-              style={{ width: "100%", height: "300px" }}
-              src={ebike}
-            />
+            <a href="https://e-bike-client.web.app/" target="blank">
+              <Card.Img
+                variant="top"
+                style={{ width: "100%", height: "300px" }}
+                src={ebike}
+              />
+            </a>
           </Card>
         </Col>
         <Col border="dark" sm={12}>
           <Card>
-            <Card.Img
-              variant="top"
-              style={{ width: "100%", height: "300px" }}
-              src={kfood}
-            />
+            <a href="https://k-food-a0ea3.web.app/" target="blank">
+              <Card.Img
+                variant="top"
+                style={{ width: "100%", height: "300px" }}
+                src={kfood}
+              />
+            </a>
           </Card>
         </Col>
         <Col border="dark" sm={12}>

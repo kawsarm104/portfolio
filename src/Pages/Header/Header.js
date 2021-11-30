@@ -11,7 +11,7 @@ const Header = () => {
       style={{ backgroundColor: "#c3d8e9" }}
     >
       <Container>
-        <Navbar.Brand href="/">Md. Kawsar Hossain</Navbar.Brand>
+        <Navbar.Brand as={NavLink} to="/">Md. Kawsar Hossain</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
