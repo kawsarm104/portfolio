@@ -31,6 +31,7 @@ const About = () => {
               & Engineering. I love to learn new things and always excited about
               it.
             </p>
+
             <h4>My Skills </h4>
             <div className="mt-4">
               HTML
@@ -43,6 +44,28 @@ const About = () => {
               <ProgressBar now={react} label={`${react}%`} />
             </div>
             <Skill></Skill>
+            <div className="d-flex">
+              Profile:&nbsp;
+              <span>
+                <a
+                  href="https://github.com/kawsarm104"
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  Github
+                </a>
+                &nbsp;
+              </span>
+              <span>
+                <a
+                  href="https://www.linkedin.com/in/kawsarm104/"
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  LinkedIn
+                </a>
+              </span>
+            </div>
           </Col>
         </Row>
       </Container>
