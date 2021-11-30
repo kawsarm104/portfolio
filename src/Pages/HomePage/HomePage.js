@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Typical from "react-typical";
-import image from "../../image/personal/kimsoohyun.jpg";
+import image from "../../image/personal/personalimage.jpg";
 import "./HomePage.css";
 
 const HomePage = () => {
