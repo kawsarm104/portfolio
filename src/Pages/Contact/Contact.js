@@ -11,7 +11,7 @@ const Contact = () => {
           <img src={image} className="img-fluid p-5 " style={{marginTop:"-40px"}} alt="" />
         </Col>
         <Col sm={12} md={6}style={{marginTop:"40px"}}>
-          <h5 className="fw-bolder mt-3">CONTACT ME</h5>
+          <h5 className="fw-bolder mt-3 text-warning">CONTACT ME</h5>
           <h1 className="fw-bolder my-4">Get in touch with me today.</h1>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
