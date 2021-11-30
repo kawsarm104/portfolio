@@ -1,19 +1,35 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, ProgressBar, Row } from "react-bootstrap";
 import image from "../../image/personal/personalimageforhomewhite.png";
 import Skill from "../Skill/Skill";
 
-
 const About = () => {
+  const html = 100;
+  const css = 75;
+  const js = 70;
+  const react = 70;
   return (
-    <div className="" style={{ bacgroundColor: "#ffffff" }}>
-      <Container className="mt-3 mx-auto p-auto">
+    <div
+      className=""
+      style={{ bacgroundColor: "#ffffff", overflowX: "hidden" }}
+    >
+      <Container className="mt-3">
         <Row className="">
-          <Col sm={12} md={5}>
-            <img src={image} className="img-fluid" alt="" />
+          <Col sm={12} md={6} className="">
+            <img
+              src={image}
+              className="img-fluid"
+              style={{ marginTop: "" }}
+              alt=""
+            />
           </Col>
-          <Col sm={12} md={7}>
-            <h5 className="fw-bolder">ABOUT ME</h5>
+          <Col
+            sm={12}
+            md={6}
+            className=""
+            style={{ marginTop: "30px" }}
+          >
+            <h5 className="fw-bolder mt-5">ABOUT ME</h5>
             <h2 className="fw-bolder my-4">Hello, I am Md. Kawsar Hossain.</h2>
             <p className="mb-4">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -21,19 +37,17 @@ const About = () => {
               enim ad minim enim veniam, quis nostrud exercitation ullamco
               laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <Row className="my-3">
-              <Col sm={12} md={6}>
-                <h6>Web Design</h6>
-                <h6>Web Design</h6>
-                <h6>Web Design</h6>
-              </Col>
-              <Col sm={12} md={6}>
-                <h6>Mobile Apps</h6>
-                <h6>Mobile Apps</h6>
-                <h6>Mobile Apps</h6>
-              </Col>
-              <Skill></Skill>
-            </Row>
+            <div className="my-4">
+              HTML
+              <ProgressBar now={html} label={`${html}%`} />
+              CSS
+              <ProgressBar now={css} label={`${css}%`} />
+              JavaScript
+              <ProgressBar now={js} label={`${js}%`} />
+              React
+              <ProgressBar now={react} label={`${react}%`} />
+            </div>
+            <Skill></Skill>
           </Col>
         </Row>
       </Container>
