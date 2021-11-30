@@ -1,8 +1,9 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row ,Button} from "react-bootstrap";
 import Typical from "react-typical";
 import image from "../../image/personal/personalimageforhome.png";
 import "./HomePage.css";
+import {Link} from "react-router-dom"
 
 const HomePage = () => {
   return (
@@ -26,6 +27,11 @@ const HomePage = () => {
                   wrapper="b"
                 />
               </h1>
+              <a href="https://drive.google.com/uc?id=19uvcrHmC0G0t_KtUCTcj9dyQ8fX7WSVC&export=download">
+                <Button variant="warning" className="mt-5">
+                  Download My Resume
+                </Button>
+              </a>
             </div>
           </Col>
           <Col sm={12} md={5} className="">

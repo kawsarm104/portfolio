@@ -49,7 +49,7 @@ const About = () => {
               <span>
                 <a
                   href="https://github.com/kawsarm104"
-                  target="_blank"
+                  
                   style={{ textDecoration: "none" }}
                 >
                   Github
@@ -59,7 +59,7 @@ const About = () => {
               <span>
                 <a
                   href="https://www.linkedin.com/in/kawsarm104/"
-                  target="_blank"
+                 
                   style={{ textDecoration: "none" }}
                 >
                   LinkedIn
