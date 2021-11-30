@@ -10,22 +10,22 @@ const HomePage = () => {
       <Container fluid className="homepage">
         <Row className="mx-5">
           <Col sm={12} md={7} className="position-parent">
-            <div className=" position-child text-center bg-primary">
+            <div className=" position-child ">
               <h1 className="">Md. Kawsar Hossain</h1>
-              <h2>Front-End Developer</h2>
-              <div className="inline-class bg-warning">
-                <h3>I am a </h3>
+
+              <h1>
+                I am a
                 <Typical
                   steps={[
-                    "React Js Developer",
+                    " React Js Developer",
                     1000,
-                    "Front-End Developer",
-                    500,
+                    " Front-End Developer",
+                    1000,
                   ]}
                   loop={Infinity}
-                  wrapper="h2"
+                  wrapper="b"
                 />
-              </div>
+              </h1>
             </div>
           </Col>
           <Col sm={12} md={5} className="p-3 mt-4">

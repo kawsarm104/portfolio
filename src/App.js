@@ -3,6 +3,7 @@ import Header from "./Pages/Header/Header";
 import HomePage from "./Pages/HomePage/HomePage";
 import About from "./Pages/About/About";
 import Portfolio from "./Pages/Portfolio/Portfolio";
+import Education from "./Pages/Education/Education";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <HomePage />
       <About></About>
+      <Education></Education>
       <Portfolio></Portfolio>
     </div>
   );
