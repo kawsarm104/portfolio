@@ -1,88 +1,39 @@
-import React from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
-import a8 from "../../image/portfolio/screenshot-awesome-wozniak-716a19.netlify.app-2021.11.30-17_18_12.png";
-import a9 from "../../image/portfolio/screenshot-brave-mcnulty-9635a1.netlify.app-2021.11.30-17_19_27.png";
-import ebike from "../../image/portfolio/screenshot-e-bike-client.web.app-2021.11.30-16_50_36.png";
-import kfood from "../../image/portfolio/screenshot-k-food-a0ea3.web.app-2021.11.30-16_51_06.png";
-import medicenter from "../../image/portfolio/screenshot-medicenter-dentist.firebaseapp.com-2021.11.30-16_51_42.png";
-import a7 from "../../image/portfolio/screenshot-serene-raman-b80cc4.netlify.app-2021.11.30-17_20_35.png";
+import React, { useState, useEffect } from 'react';
+import { Row, Col, Card } from "react-bootstrap"
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
+  const [projects, setProjects] = useState([])
+  useEffect(() => {
+    fetch("./data.json")
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+        setProjects(data)
+      })
+  }, [])
   return (
-    <Container className="my-5">
-      <h1 className="text-center text-warning mb-5">Portfolio</h1>
-      <Row sm={12} md={3} className="g-4">
-        <Col border="dark" sm={12}>
-          <Card>
-            <a href="https://e-bike-client.web.app/" target="blank">
-              <Card.Img
-                variant="top"
-                style={{ width: "100%", height: "300px" }}
-                src={ebike}
-              />
-            </a>
-          </Card>
-        </Col>
-        <Col border="dark" sm={12}>
-          <Card>
-            <a href="https://k-food-a0ea3.web.app/" target="blank">
-              <Card.Img
-                variant="top"
-                style={{ width: "100%", height: "300px" }}
-                src={kfood}
-              />
-            </a>
-          </Card>
-        </Col>
-        <Col border="dark" sm={12}>
-          <Card>
-            <a
-              href="https://medicenter-dentist.firebaseapp.com/"
-              target="blank"
-            >
-              <Card.Img
-                variant="top"
-                style={{ width: "100%", height: "300px" }}
-                src={medicenter}
-              />
-            </a>
-          </Card>
-        </Col>
-        <Col border="dark" sm={12}>
-          <Card>
-            <a href="https://serene-raman-b80cc4.netlify.app/" target="blank">
-              <Card.Img
-                variant="top"
-                style={{ width: "100%", height: "300px" }}
-                src={a7}
-              />
-            </a>
-          </Card>
-        </Col>
-        <Col border="dark" sm={12}>
-          <Card>
-            <a href="https://learn-with-kawsar.web.app/" target="blank">
-              <Card.Img
-                variant="top"
-                style={{ width: "100%", height: "300px" }}
-                src={a8}
-              />
-            </a>
-          </Card>
-        </Col>
-        <Col border="dark" sm={12}>
-          <Card>
-            <a href="https://brave-mcnulty-9635a1.netlify.app/" target="blank">
-              <Card.Img
-                variant="top"
-                style={{ width: "100%", height: "300px" }}
-                src={a9}
-              />
-            </a>
-          </Card>
-        </Col>
+    <>
+      <Row xs={1} sm={1} md={3} className="mx-auto my-3 g-3">
+        {projects.map((project) => (
+          <Col>
+            <Card>
+              <Card.Img variant="top" src={project.image} />
+              <Card.Body className="text-center">
+                <Card.Title>{project.name}</Card.Title>
+                <Card.Text className="d-flex justify-content-between ">
+                  {/* {project?.requirements} */}
+                  <Link to={project.liveLink} style={{textDecoration:"none"}}>Live Demo</Link>
+                  <Link to={project.liveLink} style={{textDecoration:"none"}}>Github Client</Link>
+                  <Link to={project.liveLink} style={{textDecoration:"none"}}>Github Server</Link>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
       </Row>
-    </Container>
+
+    </>
   );
 };
 
