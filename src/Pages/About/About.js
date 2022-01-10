@@ -5,9 +5,9 @@ import Skill from "../Skill/Skill";
 
 const About = () => {
   const html = 100;
-  const css = 75;
-  const js = 70;
-  const react = 70;
+  const css = 80;
+  const js = 80;
+  const react = 85;
   return (
     <div
       className=""
