@@ -24,8 +24,8 @@ const Portfolio = () => {
                 <Card.Text className="d-flex justify-content-between ">
                   {/* {project?.requirements} */}
                   <a target="blank" href={project.liveLink} style={{textDecoration:"none"}}>Live Demo</a>
-                  <a target="blank" href={project.liveLink} style={{textDecoration:"none"}}>Github Client</a>
-                  <a target="blank" href={project.liveLink} style={{textDecoration:"none"}}>Github Server</a>
+                  <a target="blank" href={project.githubClient} style={{textDecoration:"none"}}>Github Client</a>
+                  <a target="blank" href={project.githubServer} style={{textDecoration:"none"}}>Github Server</a>
                 </Card.Text>
               </Card.Body>
             </Card>
